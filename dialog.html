@@ -1,0 +1,96 @@
+<!-- Pop-Up Dialog -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pop-Up Dialog</title>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400|Mina|Righteous" rel="stylesheet">
+        <style>
+            * {
+    box-sizing: border-box;
+    transition:  .3s in-ease;
+}
+            body {
+                    background: url(https://dailyanimeart.files.wordpress.com/2014/08/kirito-and-sinon2.jpg);
+            }
+            .pop-up {
+    width: calc(50% - 250px);
+    margin: 0 auto;
+    margin-top: calc(10%);
+    background: #2b1e1ee6;
+    text-align: center;
+    border-radius: 5px;
+    color: #dadada;
+    font-family: sans-serif;
+}
+
+            button {
+    border: 0;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 100%;
+    color: #dadada;
+    outline: 0;
+    font-family: sans-serif;
+    margin: 20px 50px;
+    text-transform: uppercase;
+    padding: 4px 7px;
+    border: 2px solid #dadada;
+}
+            
+           h5#op {
+    font-family: 'Mina', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: -110px;
+}
+            
+            
+            span.obal {
+    height: 200px;
+    border: 2px solid;
+    width: 0px;
+    border-radius: 15%;
+    margin: 0 auto;
+    padding: 25% 20%;
+    display:  block;
+}
+
+h5 {
+    margin-bottom: 150px;
+}
+
+.ox {
+    margin-top: 50px;
+}
+            
+            
+            
+            
+            h2 {
+    padding:  10px;
+    background: rgba(109, 95, 95, 0.3);
+    box-shadow: 0 15px 25px -8px rgba(0,0,0,0.5);
+}
+
+button#O {
+    background: #1148af;
+}
+
+button#X {
+    background:  #E32636;
+}
+        </style>
+    </head>
+    <body>
+        <div class="pop-up">
+            <h2>いまんえください。?</h2>
+            <h5>あなたは苦しみ、あなたは死ぬことができます。!</h5>
+            <h5 id="op">Place Your Hand</h5>
+            <span class="obal"></span>
+            <div class="ox"><button id="O">o</button><button id="X">x</button></div>
+        </div>
+    </body>
+</html>

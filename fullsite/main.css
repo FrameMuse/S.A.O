@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .4s ease;
+}
+*::selection {
+    color: #171717;
+    background: #e6e6e6;;
+}
+
+@keyframes dmask {
+    0% {
+        opacity: 0;
+        background-position-x: 0px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background: #453535;
+}
+.mfsao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 999;
+}
+.mfsao menu {
+    height:  inherit;
+    padding: 2em;
+    z-index: 999;
+}
+.mfsao menu > a {
+    z-index: 999;
+    margin: 1em;
+    transition: unset;
+}
+.mfsao menu > a:hover ~ .mfsao menu > a > span {
+    animation: dmask 0.3s;
+}
+.mfsao menu > a:hover {
+    animation: dmask 0.3s;
+    background-position-x: 0px;
+}
+
+
+a.profile {
+    background-position: -50px 0;
+}
+a.friends {
+    background-position: -50px -50px;
+}
+a.comm {
+    background-position: -50px -100px;
+}
+a.settings {
+    background-position: -50px -200px;
+}
+
+
+
+.mfsao menu > a > span {
+    background: url(pack-sao-imgs.png);
+    background-size: 500px;
+    background-position: inherit;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    display:  block;
+    z-index: 999;
+}
